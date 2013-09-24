@@ -109,6 +109,14 @@ soong_config_module_type {
     ],
 }
 
+cc_library_static {
+    name: "vendor_init",
+    recovery_available: true,
+    srcs: [
+        "vendor_init.cpp",
+    ],
+}
+
 libinit_cc_defaults {
     name: "init_defaults",
     sanitize: {
